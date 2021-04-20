@@ -1,0 +1,251 @@
+body{
+  background-image: url("../img/fon.jpg");
+}
+header{
+  margin-top: 20px;
+  font-family: 'Comfortaa', cursive;
+}
+.dws-menu *{
+  position: top;
+  margin: 10;
+  padding: 0;
+
+}
+.dws-menu ul,
+.dws-menu ol{
+list-style: none;
+}
+.dws-menu > ul{
+  display: flex;
+  justify-content: center;
+}
+.dws-menu > ul li a{
+  display: block;
+  background: #ae00ff;
+  padding: 15px 30px 15px 40px;
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+.dws-menu > ul li{
+  position: relative;
+  border-right: 1px solid #001aff;
+}
+.dws-menu > ul li > a i.fa{
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  font-size: 18px;
+}
+.dws-menu > ul li::first-child{
+  border-left: 1px solid #b700ff;
+}
+.dws-menu > ul li::last-child{
+  border-left: 1px solid #ff00ff;
+}
+.dws-menu li a:hover{
+  background: #001aff;
+  color: #ffffff;
+  box-shadow: 1px 5px 10px -5px black;
+  transition: all 0.3s ease;
+}
+.dws-menu li ul{
+  position: absolute;
+  min-width: 150px;
+  display: none;
+}
+.dws-menu li > ul li{
+  border: 1px solid #001aff;
+}
+.dws-menu li > ul li a{
+  padding: 10px;
+  text-transform: none;
+  background: #b700ff;
+}
+.dws-menu li:hover > ul{
+  display: block;
+}
+p {
+  box-align: center;
+}
+#content {
+  margin-left: 500px;
+  margin-right: 500px;
+  padding: 10px;
+  background: #b700ff;
+  font-weight: bold;
+}
+.footer {
+  background: #8fa09b; /* Цвет фона подвала */
+  color: #fff; /* Цвет текста */
+  padding: 5px; /* Отступы вокруг текста */
+  clear: left; /* Отменяем действие float */
+}
+.data {
+  color: #ffffff;
+}
+/* CSS для формы */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.2em;
+  background-color: #fff;
+  color: #555;
+}
+
+p {
+  padding: 0 0 20px 0;
+  line-height: 1.7em;
+} 
+
+input, textarea {
+  outline: none;
+  border: none;
+  border: solid 1px #f2f2f2;
+}
+
+h3, h2 {
+  font: normal 85% 'century gothic', arial;
+  margin: 0 0 0 0;
+  padding: 3px 0 5px 0;
+  color: #000;
+}
+
+h2 {
+  font-size: 140%;
+}
+
+hr {
+  color: black;
+}
+.content {
+  text-align: left;
+  width: 30%;
+  padding: 1% 0 0 5px;
+  margin: 0 0 0 27%;
+  float: left;
+}
+
+.reviews {
+  margin-bottom: 4%;
+  font-size: 0.9em;
+  text-align: left;
+  width: 30%;
+  padding: 1% 0 0 5px;
+  margin: 0 0 0 27%;
+  float: left;
+}
+
+.reviews .review_text {
+
+  background-color: #f2f2f2;
+  color: black;
+  padding: 1%;
+  border-radius: 5px;
+  border: solid 1px;
+  width: 160%;
+  height: 11%;
+  padding-top: 2%;
+  bottom: 2%;
+  padding-left: 2%;
+}
+
+.send {
+
+  margin-bottom: 4%;
+}
+
+.send input[type="text"], input[type="email"], textarea {
+
+  border: solid 1px #000000;
+  margin-bottom: 2%;
+}
+
+.send input[type="text"], [type="email"] {
+
+  width: 38%;
+  color: #5d5d5d;
+  width: 46%;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.send textarea {
+
+  width: 163%;
+  height: 20%;
+  border-radius: 5px;
+}
+
+.send input[type="submit"] {
+
+  background-color: #b5c1f3;
+  padding: 2%;
+  color: black;
+  border-radius: 5px;
+  cursor:pointer;
+}
+
+  /* CSS для рейтинга (звезды) */
+
+.rating {
+    float:left;
+}
+
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:140%;
+    line-height:1.2;
+    color:#ddd;
+    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
+
+
